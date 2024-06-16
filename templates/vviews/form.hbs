@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>10 Questions Form</title>
+    <link rel="stylesheet" href="./mcq.css">
+</head>
+<style>
+    .navbar{
+    background-color: rgb(155, 51, 51);
+    color: #ffffff;
+    margin: 0.1% 0.1% 0.1% 0.1%;
+    padding: 0.1% 0.1% 0.1% 0.1%;
+    list-style: none;
+    border: 2px solid rgb(155, 051, 51);
+    align-items: center;
+    border-radius: 5px;
+}
+.list{
+    color: whitesmoke;
+    margin: 1% 1% 1% 1%;
+    padding: 0.3% 0.3% 0.3% 0.3%;
+    font-size: large;
+    display: inline-block;
+}
+.list1{
+    position: relative;
+    left: 55%;
+    color: whitesmoke;
+    margin: 1% 1% 1% 1%;
+    padding: 0.3% 0.3% 0.3% 0.3%;
+    font-size: large;
+    display: inline-block;
+}
+a{
+    position: relative;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+}
+a:hover{
+    color: yellow;
+}
+a::after{
+    position: absolute;
+    content: '';
+    display: block;
+    background-color: yellow;
+    height: 1px;
+    width:0%;
+    bottom: -6px;
+    left: -3.25px;
+    transition: 0.1s;
+}
+a:hover::after{
+   
+    position: absolute;
+    content: '';
+    display: block;
+    background-color: yellow;
+    height: 1px;
+    width:100%;
+    bottom: -6px;
+    left: -3.25px;
+    transition: width .3s;
+}
+h1{
+    text-align: center;
+    color: rgb(155, 051, 51);
+}
+h2{
+    text-align: center;
+    color: rgb(155, 51, 51);
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    border: 2px solid  rgb(155, 051, 51);
+    margin: 1% 1%;
+    font-size:15px;
+    padding: 1% 0.1% 2% 0.1%;
+    background-color: rgb(250, 230, 230);
+}
+#result{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color: rgb(155, 51, 51);
+}
+#Submit{
+    margin: 1% 1% 1% 1%;
+    padding: 1% 1% 1% 1%;
+    color:rgb(155, 51, 51);
+    font-size: large;
+    border:2px solid rgb(155, 51, 51);
+    border-radius: 12px;
+    position: relative;
+    left: 45%;
+}
+label{
+    font-size: 20px;
+    margin-left:1%;
+}
+p{
+    font-size: 20px;
+    margin-left:1%;
+    text-align: center;
+}
+
+.ele1{
+    display: flex;
+    justify-content: center;
+}
+.ele2{
+    display: flex;
+}
+
+</style>
+<body>
+    <div class="navbar">
+        <li class="list"><a href="/home">Home</a></li>
+        <li class="list"><a href="#">About Us</a></li>
+        <li class="list"><a href="#">Contact Us</a></li>
+        <li class="list"><a href="#">Councelling</a></li>
+        <li class="list1"><a href="/logout">logout</a></li>
+    </div>
+    <h1>10 Questions Form</h1>
+    <div class="container">
+        <form action="#" method="post" id="quiz-form">
+            <!-- Question 1 -->
+            <p>1.Which of the following activities do you enjoy most?</p>
+            <p>
+                <label>
+                    <input type="radio" name="q1" value="a"> a) Solving puzzles and problems
+                </label>
+            </p>
+            <p>
+                <label>
+                    <input type="radio" name="q1" value="b"> b) Helping and caring for others
+                </label>
+            </p>
+            <p>
+                <label>
+                    <input type="radio" name="q1" value="c"> c) Creating art or design
+                </label>
+            </p>
+            <p>
+                <label>
+                    <input type="radio" name="q1" value="d"> d) Working with numbers and data
+                </label>
+            </p>
+
+            <!-- Question 2 -->
+            <p>2. What types of hobbies or activities do you find most engaging?</p>
+            <p>
+                <label>
+                    <input type="radio" name="q2" value="a"> a) Playing musical instruments
+                </label>
+            </p>
+            <p>
+                <label>
+                    <input type="radio" name="q2" value="b"> b) Volunteering and community service
+                </label>
+            </p>
+            <p>
+                <label>
+                    <input type="radio" name="q2" value="c"> c) Writing or storytelling
+                </label>
+            </p>
+            <p>
+                <label>
+                    <input type="radio" name="q2" value="d"> d) Engaging in research or analysis
+                </label>
+            </p>
+
+            <!-- Question 3 -->
+            <p>3. When choosing a career, what's more important to you?</p>
+            <p>
+                <label>
+                    <input type="radio" name="q3" value="a"> a) Doing something you're passionate about
+                </label>
+            </p>
+            <p>
+                <label>
+                    <input type="radio" name="q3" value="b"> b) Earning a high income
+                </label>
+            </p>
+            <p>
+                <label>
+                    <input type="radio" name="q3" value="c"> c) Having a stable work-life balance
+                </label>
+            </p>
+            <p>
+                <label>
+                    <input type="radio" name="q3" value="d"> d) Advancing quickly in your career
+                </label>
+            </p>
+
+            <!-- Question 4 -->
+            <p>4. Which of the following best describes your personality?</p>
+            <p>
+                <label>
+                    <input type="radio" name="q4" value="a"> a) Introverted and reflective
+                </label>
+            </p>
+            <p>
+                <label>
+                    <input type="radio" name="q4" value="b"> b) Outgoing and social
+                </label>
+            </p>
+            <p>
+                <label>
+                    <input type="radio" name="q4" value="c"> c) Creative and artistic
+                </label>
+            </p>
+            <p>
+                <label>
+                    <input type="radio" name="q4" value="d"> d) Analytical and logical
+                </label>
+            </p>
+
+            <!-- Question 5 -->
+            <p>5. What topics or subjects do you find most interesting to read about or learn?</p>
+            <p>
+                <label>
+                    <input type="radio" name="q5" value="a"> a) Psychology and human behavior
+                </label>
+            </p>
+            <p>
+                <label>
+                    <input type="radio" name="q5" value="b"> b) Environmental issues and sustainability
+                </label>
+            </p>
+            <p>
+                <label>
+                    <input type="radio" name="q5" value="c"> c) Literature and culture
+                </label>
+            </p>
+            <p>
+                <label>
+                    <input type="radio" name="q5" value="d"> d) Technology and innovation
+                </label>
+            </p>
+            <!-- Question 6 -->
+            <p>
+            <p>6. What skills do you believe you excel at in your current job or studies?</p>
+            <p>
+                <label>
+                    <input type="radio" name="q6" value="a"> a) Leadership and management
+                </label>
+            </p>
+            <p>
+                <label>
+                    <input type="radio" name="q6" value="b"> b) Communication and teamwork
+                </label>
+            </p>
+            <p>
+                <label>
+                    <input type="radio" name="q6" value="c"> c) Technical or specialized skills
+                </label>
+            </p>
+            <p>
+                <label>
+                    <input type="radio" name="q6" value="d"> d) Research and analysis
+                </label>
+            </p>
+            <!-- Question 7 -->
+            <p>7. In a team project, which role would you be most comfortable taking?</p>
+            <p>
+                <label>
+                    <input type="radio" name="q7" value="a"> a) Team leader or manager
+                </label>
+            </p>
+            <p>
+                <label>
+                    <input type="radio" name="q7" value="b"> b) Coordinator or communicator
+                </label>
+            </p>
+            <p>
+                <label>
+                    <input type="radio" name="q7" value="c"> c) Creative thinker or idea generator
+                </label>
+            </p>
+            <p>
+                <label>
+                    <input type="radio" name="q7" value="d"> d) Researcher or data analyst
+                </label>
+            </p>
+            <!-- Question 8 -->
+            <p>8. What software tools or applications are you proficient in using?</p>
+            <p>
+                <label>
+                    <input type="radio" name="q8" value="a"> a) Microsoft Office Suite
+                </label>
+            </p>
+            <p>
+                <label>
+                    <input type="radio" name="q8" value="b"> b) Project management software
+                </label>
+            </p>
+            <p>
+                <label>
+                    <input type="radio" name="q8" value="c"> c) Adobe Creative Suite
+                </label>
+            </p>
+            <p>
+                <label>
+                    <input type="radio" name="q8" value="d"> d) Programming languages (e.g., Python, Java)
+                </label>
+            </p>
+            <!-- Question 9 -->
+            <p>9. Which types of problems or challenges do you enjoy tackling the most?</p>
+            <p>
+                <label>
+                    <input type="radio" name="q9" value="a"> a) Organizational and leadership challenges
+                </label>
+            </p>
+            <p>
+                <label>
+                    <input type="radio" name="q9" value="b"> b) Interpersonal conflicts and resolutions
+                </label>
+            </p>
+            <p>
+                <label>
+                    <input type="radio" name="q9" value="c"> c) Complex, abstract problems
+                </label>
+            </p>
+            <p>
+                <label>
+                    <input type="radio" name="q9" value="d"> d) Data analysis and decision-making
+                </label>
+            </p>
+            <!-- Question 10 -->
+            <p>10. Which areas of personal development or skills improvement do you believe are a priority for you?</p>
+            <p>
+                <label>
+                    <input type="radio" name="q10" value="a"> a) Public speaking and communication
+                </label>
+            </p>
+            <p>
+            <label>
+                <input type="radio" name="q10" value="b"> b) Time management and organization
+            </label>
+        </p>
+        <p>
+            <label>
+                <input type="radio" name="q10" value="c"> c) Creative thinking and innovation
+            </label>
+        </p>
+        <p>
+            <label>
+                <input type="radio" name="q10" value="d"> d) Technical or job-specific skills
+            </label>
+        </p>
+
+            <input type="submit" id="Submit" value="Submit">
+        </form>
+
+    </div>
+    <div id="result">
+        <div id="results">
+        </div>
+    </div>
+    <script>
+        const form = document.getElementById('quiz-form');
+        const resultsDiv = document.getElementById('results');
+        const resultDv = document.getElementById('result');
+
+        form.addEventListener('submit', function (event) {
+            event.preventDefault();
+            resultsDiv.innerHTML = '<h2>Your Answers:</h2>';
+            resultsDiv.style.color = "black";
+            resultsDiv.style.textAlign = "center";
+            let correctCount = 0;
+            for (let i = 1; i <= 10; i++) {
+                const selectedOption = document.querySelector(`input[name="q${i}"]:checked`);
+                if (selectedOption) {
+                    resultsDiv.innerHTML += `<p>Question ${i}: ${selectedOption.nextSibling.textContent}</p>`;
+                    if (selectedOption.value === 'c') {
+                        correctCount++;
+                    }
+                }
+            }
+            resultDv.style.backgroundColor = "rgb(250, 230, 230)";
+            resultDv.style.color = "rgb(155, 51, 51)";
+            resultDv.style.border = "2px solid rgb(155, 51, 51)";
+            if (correctCount == 0) {
+                resultsDiv.innerHTML += `<h1>Go for degree related to marketing </>`;
+            }
+            if (correctCount == 2) {
+                resultsDiv.innerHTML += `<h1>Career Related for you is  opt for government job </h1>`;
+            }
+            if (correctCount == 3) {
+                resultsDiv.innerHTML += `<h1>Career Related for you is  opt for government job </h1>`;
+            }
+            if (correctCount == 4) {
+                resultsDiv.innerHTML += `<h1>Career Related for you is  opt for higher semi government job </h1>`;
+            }
+            if (correctCount == 5) {
+                resultsDiv.innerHTML += `<h1>Career Related for you is  opt for government job </h1>`;
+            }
+            if (correctCount == 6) {
+                resultsDiv.innerHTML += `<h1>Career Related for you is  opt for working in private  job  or buisness firm</h1>`;
+            }
+            if (correctCount == 7) {
+                resultsDiv.innerHTML += `<h1>Career Related for you is  opt for  private  job  or buisness firm in hft firms</h1>`;
+
+            }
+            if (correctCount == 8) {
+                resultsDiv.innerHTML += `<h1>Career Related for you is  opt for  buisness firm</h1>`;
+            }
+            if (correctCount == 9) {
+                resultsDiv.innerHTML += `<h1>Career Related for you is  opt for  buisness firm  according to highly skilled approach</h1>`;
+            }
+            if (correctCount == 10) {
+                resultsDiv.innerHTML += `<h1>You are exceptionally genious whatever feild you will chose you will perform great in it.</h1>`;
+            }
+
+        });
+    </script>
+</body>
+
+</html>
+<!-- // Assuming 'c' is the correct answer for each question -->
+<!-- <style>
+    .navbar{
+        background-color: rgb(155, 51, 51);
+        color: #ffffff;
+        margin: 0.1% 0.1% 0.1% 0.1%;
+        padding: 0.1% 0.1% 0.1% 0.1%;
+        list-style: none;
+        border: 2px solid rgb(155, 051, 51);
+        align-items: center;
+        border-radius: 5px;
+    }
+    .list{
+        color: whitesmoke;
+        margin: 1% 1% 1% 1%;
+        padding: 0.3% 0.3% 0.3% 0.3%;
+        font-size: large;
+        display: inline-block;
+    }
+    .list1{
+        position: relative;
+        left: 55%;
+        color: whitesmoke;
+        margin: 1% 1% 1% 1%;
+        padding: 0.3% 0.3% 0.3% 0.3%;
+        font-size: large;
+        display: inline-block;
+    }
+    a{
+        position: relative;
+        font-size: 20px;
+        color: white;
+        text-decoration: none;
+    }
+    a:hover{
+        color: yellow;
+    }
+    a::after{
+        position: absolute;
+        content: '';
+        display: block;
+        background-color: yellow;
+        height: 1px;
+        width:0%;
+        bottom: -6px;
+        left: -3.25px;
+        transition: 0.1s;
+    }
+    a:hover::after{
+       
+        position: absolute;
+        content: '';
+        display: block;
+        background-color: yellow;
+        height: 1px;
+        width:100%;
+        bottom: -6px;
+        left: -3.25px;
+        transition: width .3s;
+    }
+    h1{
+        text-align: center;
+        color: rgb(155, 051, 51);
+    }
+    h2{
+        text-align: center;
+        color: rgb(155, 51, 51);
+    }
+    .container{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        border: 2px solid  rgb(155, 051, 51);
+        margin: 1% 1%;
+        font-size:15px;
+        padding: 1% 0.1% 2% 0.1%;
+        background-color: rgb(250, 230, 230);
+    }
+    #result{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+    #Submit{
+        margin: 1% 1% 1% 1%;
+        padding: 1% 1% 1% 1%;
+        color:rgb(155, 51, 51);
+        font-size: large;
+    }
+</style> -->
